@@ -1,0 +1,226 @@
+<html lang="ja">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   旅館のサイト
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow">
+   <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="旅館のロゴ" class="h-10 w-10 mr-3" height="50" src="https://storage.googleapis.com/a1aa/image/wVtfBUxHin1GB62X1N9QjUIF5hN7r1WXHezgvfXsORfpCM9PB.jpg" width="50"/>
+     <h1 class="text-2xl font-bold">
+      旅館の名前
+     </h1>
+    </div>
+    <nav class="hidden md:flex space-x-6">
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      ホーム
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      宿泊プラン
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      施設案内
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      アクセス
+     </a>
+     <a class="text-gray-700 hover:text-gray-900" href="#">
+      お問い合わせ
+     </a>
+    </nav>
+    <div class="md:hidden">
+     <button class="text-gray-700 focus:outline-none" id="menu-button">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+  </header>
+  <!-- Mobile Menu -->
+  <div class="hidden md:hidden bg-white shadow-lg" id="mobile-menu">
+   <nav class="px-4 py-6 space-y-4">
+    <a class="block text-gray-700 hover:text-gray-900" href="#">
+     ホーム
+    </a>
+    <a class="block text-gray-700 hover:text-gray-900" href="#">
+     宿泊プラン
+    </a>
+    <a class="block text-gray-700 hover:text-gray-900" href="#">
+     施設案内
+    </a>
+    <a class="block text-gray-700 hover:text-gray-900" href="#">
+     アクセス
+    </a>
+    <a class="block text-gray-700 hover:text-gray-900" href="#">
+     お問い合わせ
+    </a>
+   </nav>
+  </div>
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+   <!-- Hero Section -->
+   <section class="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
+    <img alt="美しい旅館の外観" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/hYg3qfTVc1zwES7PCV0hEAadHt6OLvxLxI3uqCfEhjgkATfnA.jpg" width="1200"/>
+    <div class="p-6">
+     <h2 class="text-3xl font-bold mb-4">
+      ようこそ、私たちの旅館へ
+     </h2>
+     <p class="text-gray-700 mb-4">
+      私たちの旅館は、心地よいおもてなしと美しい景色でお客様をお迎えします。リラックスしてお過ごしください。
+     </p>
+     <a class="text-blue-500 hover:underline" href="#">
+      もっと見る
+     </a>
+    </div>
+   </section>
+   <!-- Rooms Section -->
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     宿泊プラン
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="和室の部屋の写真" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/zM5MDZDNPvpgJJJ5wftF7SVTFujQFeoVxbRt1DCo7IHmATfnA.jpg" width="400"/>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2">
+        和室
+       </h3>
+       <p class="text-gray-700 mb-4">
+        伝統的な和室で、畳の香りとともにリラックスできます。
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        詳細を見る
+       </a>
+      </div>
+     </div>
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="洋室の部屋の写真" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/ETJolHd8ngrOHV9NRWQbQ7j1ARM0nAZcgZSwGuCvzAKKw0fJA.jpg" width="400"/>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2">
+        洋室
+       </h3>
+       <p class="text-gray-700 mb-4">
+        モダンな洋室で、快適な滞在をお楽しみいただけます。
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        詳細を見る
+       </a>
+      </div>
+     </div>
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="スイートルームの部屋の写真" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/zhJGDFf9W6VUeEMBnFKaCj7RJdfne9SkPNaQvADDrXauCM9PB.jpg" width="400"/>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2">
+        スイートルーム
+       </h3>
+       <p class="text-gray-700 mb-4">
+        豪華なスイートルームで、特別なひとときをお過ごしください。
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        詳細を見る
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Facilities Section -->
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     施設案内
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="温泉の写真" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/pvfDYl7p2g2xKaOASfo84XxRG3x1JduZTWRlMnbgkx7xATfnA.jpg" width="400"/>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2">
+        温泉
+       </h3>
+       <p class="text-gray-700 mb-4">
+        天然温泉で心身ともにリフレッシュできます。
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        詳細を見る
+       </a>
+      </div>
+     </div>
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="レストランの写真" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/uoc8CjGQcELKIBfYhPy87PkDr3mP5lebry0WZGeepqd3CM9PB.jpg" width="400"/>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2">
+        レストラン
+       </h3>
+       <p class="text-gray-700 mb-4">
+        地元の食材を使った美味しい料理をお楽しみください。
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        詳細を見る
+       </a>
+      </div>
+     </div>
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="庭園の写真" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/SKyJQg8LNcZQDt5u2tFThFdgfKmsAJ06kZdLcDGKeUffCM9PB.jpg" width="400"/>
+      <div class="p-6">
+       <h3 class="text-xl font-bold mb-2">
+        庭園
+       </h3>
+       <p class="text-gray-700 mb-4">
+        四季折々の美しい庭園を散策できます。
+       </p>
+       <a class="text-blue-500 hover:underline" href="#">
+        詳細を見る
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-8">
+   <div class="container mx-auto px-4 py-6">
+    <div class="flex justify-between items-center">
+     <p class="text-gray-700">
+      © 2023 旅館の名前. All rights reserved.
+     </p>
+     <div class="flex space-x-4">
+      <a class="text-gray-700 hover:text-gray-900" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a class="text-gray-700 hover:text-gray-900" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a class="text-gray-700 hover:text-gray-900" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+  </script>
+ </body>
+</html>
